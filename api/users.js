@@ -9,11 +9,11 @@ usersRouter.use((req, res, next) => {
 });
 
 usersRouter.get('/', async (req, res) => {
-    const users = await getAllUsers();
+  const users = await getAllUsers();
 
-    res.send({
-        users
-    });
+  res.send({
+    users
+  });
 });
 
 module.exports = usersRouter;
